@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>voice Speak</title>
+  </head>
+  <body>
+    <div>
+      <input id="input">
+      <button onclick="speak()" > speak</button>
+    </div>
+    <script>
+      function speak(){
+        var.text = document.getElementByID("input").value;
+        var utterance =new Speechsynthesis Utterance(text);
+        Speechsynthesis.speak(Utterance);
+    </script>
+  </body>
+</html>
