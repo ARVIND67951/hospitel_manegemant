@@ -4,18 +4,22 @@
     <title>voice Speak</title>
   </head>
   <body>
-    <h1>This Website making by Er.arvind Sikandra</h1>
-    <div>
-      <input id="input">
-      <button onclick="speak()" >Speak</button>
-    </div>
+    <h1 class="name">This Website making by Er.arvind Sikandra</h1>
+    <div id="text-to-speech">
+  <textarea id="text"></textarea>
+  <button id="speak-button">Speak</button>
+</div>
     <style>
       #text-to-speech {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.name{
+  display flex;
+  color:aqua;
+  align-items:center;
+}
 #text {
   width: 300px;
   height: 100px;
